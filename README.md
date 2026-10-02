@@ -15,15 +15,13 @@ Ezután látogasd meg a `http://localhost:8000` címet.
 ## Tartalom
 
 - `index.html` — főoldal, termékkatalógus, szolgáltatások, referenciák és kapcsolat
-- `css/variables.css` — színek, tipográfia és közös méretek
-- `css/style.css` — komponensek és asztali megjelenés
-- `css/responsive.css` — mobil- és tablet-elrendezések
+- `css/style.css` — önálló, reszponzív stíluslap színpalettával, komponensekkel és mobilnézettel
 - `js/main.js` — navigáció, termékszűrés és demó kapcsolatfelvételi űrlap
 - `js/components.js` — közös toast értesítés
 - `images/` — saját, könnyen cserélhető SVG illusztrációk
 
 ## Testreszabás
 
-A márkanév, elérhetőségek, termékek és szövegek közvetlenül az `index.html` fájlban szerkeszthetők. A termékek szűréséhez add meg a kártyán a `data-category` és `data-name` értékeket, a hozzá tartozó szűrőgombon pedig a megfelelő `data-filter` kategóriát. A színpaletta a `css/variables.css` fájlban állítható.
+A márkanév, elérhetőségek, termékek és szövegek közvetlenül az `index.html` fájlban szerkeszthetők. A termékek szűréséhez add meg a kártyán a `data-category` és `data-name` értékeket, a hozzá tartozó szűrőgombon pedig a megfelelő `data-filter` kategóriát. A színpaletta a `css/style.css` fájl elején található CSS-változókkal állítható.
 
 Az űrlap jelenleg csak böngészőoldali bemutató: nem küld adatot szerverre. Éles használathoz csatlakoztass saját űrlapkezelő szolgáltatást, és frissítsd az adatkezelési tájékoztatót. A Google Fonts betűkészletek internetkapcsolat esetén töltődnek be; a rendszer helyi betűtípusra vált, ha nem érhetők el.
